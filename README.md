@@ -16,9 +16,9 @@ The reaseon is pretty simple, there hasn't been any skins that can read both BGA
 
 ## 食用方法 Instruction
 *7.6 21:00 追加更新: <br>
-Malody官网把可能出于商业原因4.3.7旧版下载地址关停了, 网上也没找到啥好的下载入口, 这里贴出个人整理的两个平台包(网盘)*
+Malody官网把可能出于商业原因4.3.7旧版下载地址关停了, 网上也没找到啥好的下载入口, 这里贴出个人整理的两个平台安装包(网盘)*
 <br>
-(出于安全考虑, 请自行扫QR Code进入地址)<br>
+(出于安全考虑, 请自行扫QR Code进入地址, 请**使用浏览器PC模式请求**)<br>
 ![](statics/download.png)<br>
 密码: fe3n<br>
 Tips: 安装包**已集成该皮肤和两首测试曲**, 可无视下面的安装方法
