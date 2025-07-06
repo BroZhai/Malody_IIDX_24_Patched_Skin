@@ -22,3 +22,7 @@ The reaseon is pretty simple, there hasn't been any skins that can read both BGA
 - **方法B**: 下载'modified'文件夹下的"**24_fix.zip**", 手动将解压出来的文件夹放在Malody目录下的/skin文件夹中<br>
 **Method Two**: Download the '**24_fix.zip**' under the folder 'modified'. Extract the zip folder and cut the extracted folder to your Malody skin folder.
 ![instruction](statics/instructB.png)
+
+Tips: 该仓库同时也整合了3个带BGA的bms曲包,'Sample_charts'文件夹中<br>
+可自行下载至Malody/beatmap下进行游玩测试, bms曲包所有权归原作者所有<br>
+(Some of the sample charts are also included here for your testing. Please note that the original author&artists reserves all the Copyrights.)
