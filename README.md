@@ -15,6 +15,14 @@ The reaseon is pretty simple, there hasn't been any skins that can read both BGA
 
 
 ## 食用方法 Instruction
+*7.6 21:00 追加更新: <br>
+Malody官网把可能出于商业原因4.3.7旧版下载地址关停了, 网上也没找到啥好的下载入口, 这里贴出个人整理的两个平台包(网盘)*
+<br>
+(出于安全考虑, 请自行扫QR Code进入地址)<br>
+![](statics/download.png)<br>
+密码: fe3n<br>
+Tips: 安装包**已集成该皮肤和两首测试曲**, 可无视下面的安装方法
+
 - **方法A**: 直接下载"**24_fix.msz**", 在Malody中自行导入该皮肤文件启用即可 <br>
 *(注: 该皮肤不可和其他皮肤重叠使用)*<br>
 **Method One**: Directly download and import **24_fix.msc** to your Malody 4.3.7<br>
