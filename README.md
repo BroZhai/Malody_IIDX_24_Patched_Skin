@@ -2,6 +2,7 @@
 A customized skin for Malody reading 7/8K charts. Which supports reading both BGA & BGI(part of). *Originated from "IIDX_24_SINOBUZ"*<br>
 一个Malody的7/8K皮肤, 适配于全端, 支持BGA, 也能看到(部分)BGI曲绘 (如有
 ![demon.jpg](statics/demon.jpg)
+移动端bms不再是梦(迫真<br>
 *注: 该皮肤目前只在Malody4.3.7版本中测试能用, Malody V尚不知是否可用...*<br>
 *ps: This skin works under Malody4.3.7, I have not tested for Malody V yet...<br>
 (You may try it out yourself and give me an issue if possibile :3*
