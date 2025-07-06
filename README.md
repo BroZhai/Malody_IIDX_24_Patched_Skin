@@ -17,7 +17,7 @@ The reaseon is pretty simple, there hasn't been any skins that can read both BGA
 ## 食用方法 Instruction
 - **方法A**: 直接下载"**24_fix.msz**", 在Malody中自行导入该皮肤文件启用即可 <br>
 *(注: 该皮肤不可和其他皮肤重叠使用)*<br>
-**Method One**: Directly download and import **24_fix.msc** to you Malody 4.3.7<br>
+**Method One**: Directly download and import **24_fix.msc** to your Malody 4.3.7<br>
 *(Note: This skin works standalone)*
 
 - **方法B**: 下载'modified'文件夹下的"**24_fix.zip**", 手动将解压出来的文件夹放在Malody目录下的/skin文件夹中<br>
