@@ -22,6 +22,7 @@
 	#物体默认会'出生在'屏幕左下角 (左下角为原点, pos 0,0)
 #  
 
+#新增中上方取名
 _song_title 
     type=1
     text={title}
@@ -30,6 +31,7 @@ _song_title
     pos=1015,94%
     zindex=200
 
+#新增右上曲师信息
 _song_artist
     type=1
     text={artist}
@@ -38,6 +40,7 @@ _song_artist
     pos=1214,88.7%
     zindex=200
 
+#新增右上难度信息
 _song_creator
     type=1
     text={version}
@@ -46,6 +49,7 @@ _song_creator
     pos=1215,84.6%
     zindex=200
 
+#血槽下方综合信息展示(已PS, 但仍可能超界)
 _title_below_groove
 	type=1
 	text={title} - {artist} - {version}
@@ -54,6 +58,7 @@ _title_below_groove
 	pos=38,11.1%
 	zindex=202
 
+#原版动画相关
 :fade_sizex
 	name=fade,from=100,to=0,time=(0,+131.32),repeat=r1000000
 	name=size,from=(4,4),to=(449,4),time=(0,+1000),trans=(0.78,1.09,0.09,1),repeat=1000000
@@ -86,7 +91,7 @@ _judgeline_redbar
 	pos=75,365
 	opacity=100
 
-#背景图
+#背景图(已PS)
 _stage0
 	type=0
 	zindex=0
@@ -301,7 +306,7 @@ score-hp
 	rotate=180
 	type2=0
 
-# fast样式
+# fast样式 (已注释, 再次启用可能需要手动调整位置, 可能会和'准度百分比'重叠)
 #hit-fast
 #	zindex=15
 #	anchor=1
@@ -310,7 +315,7 @@ score-hp
 #	frame=fast/0-0
 #	interval=200
 
-#slow样式
+#slow样式 (同上)
 #hit-slow
 #	zindex=15
 #	anchor=1
@@ -319,13 +324,13 @@ score-hp
 #	frame=slow/0-0
 #	interval=200
 
-#bga展示区
+#bga展示区(修改了展示区大小 和 定位)
 bga
 	zindex=20
 	size=0,726
 	pos=1025,13.5%
 
-#重写暂停按钮样式
+#重写暂停按钮样式(新增)
 pause
     type=0
     tex=pause.png
@@ -333,7 +338,7 @@ pause
     pos=40,96%
     zindex=100
 
-#精准度数值 (更改使用自定义贴图, 追加了小数点.和百分号%, 更改显示位置到combo上方)
+#精准度数值 (更改使用自定义贴图, 追加了小数点.和百分号%, 更改显示位置到combo上方, 原版是只有整数)
 score-acc
 	zindex=12
 	frame=char/0-11
@@ -352,7 +357,7 @@ score-acc
 #	interval=1
 
 
-#精准度背景
+#精准度背景(已弃用, 原版用于遮挡'小数部分')
 #_score_acc_cover
 #	type=0
 #	anchor=6
