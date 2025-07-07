@@ -11,12 +11,12 @@ A customized skin for Malody reading 7/8K charts. Which supports reading both BG
 很少有人会有在Malody里面有玩BMS的需求, 但恰好我就是一个, 而且我个人已经习惯看IIDX的皮肤了, 看不习惯其他的PC轨道皮 -w-<br>
 但在Malody中要找到的**又能看BGA&BGI**的BMS皮肤<u>基本上没有</u>, 好不容易找到一些, 结果发现要么不会读BGA, 要么看不到曲绘背景😡<br>
 于是, dude一气之下, 决定从0开始自己动手爆改, 就有了这个仓库<br><br>
-The reaseon is pretty simple, there hasn't been any skins that can read both BGA & BGI (if exists) at the same time. To make the stage scene more dramatic. I decide to make my own one from scratch using the existed resources.<br>
+The reason is pretty simple: there haven't been any skins that can read both BGA & BGI (if they exist) at the same time. To make the stage scene more dramatic. I decided to make my own one from scratch using the existing resources.<br>
 
 
 ## 食用方法 Instruction
 *7.6 21:00 追加更新: <br>
-Malody官网把可能出于商业原因4.3.7旧版下载地址关停了, 网上也没找到啥好的下载入口, 这里贴出个人整理的两个平台安装包(网盘)*
+Malody官网把可能出于商业原因4.3.7旧版下载地址关停了, 网上也没找到啥好的下载入口, 这里贴出个人整理的两个平台安装包(网盘 or 前往release ver1.1 进行下载)*
 <br>
 (出于安全考虑, 请自行扫QR Code进入地址, 请**使用浏览器PC模式请求**)<br>
 ![](statics/download.png)<br>
@@ -34,4 +34,4 @@ Tips: 安装包**已集成该皮肤和两首测试曲**, 可无视下面的安�
 
 Tips: 该仓库同时也整合了3个带BGA的bms曲包,'Sample_charts'文件夹中<br>
 可自行下载至Malody/beatmap下进行游玩测试, bms曲包所有权归原作者所有<br>
-(Some of the sample charts are also included here for your testing. Please note that the original author&artists reserves all the Copyrights.)
+(Some of the sample charts are also included here for your testing. Please note that the original author and artists reserve all Copyrights.)
