@@ -34,21 +34,28 @@ _song_artist
     type=1
     text={artist}
     color=#ffffff 
-    fsize=25
+    fsize=24
     pos=1214,88.7%
     zindex=200
 
-_song_creator
+_song_difficulty
     type=1
     text={version}
     color=#ffffff 
-    fsize=24
+    fsize=26
     pos=1215,84.6%
     zindex=200
 
+_song_bpm
+	type=1
+	text=BPM: {bpm}
+	anchor=2
+	pos=1080,100%
+	zindex=202
+
 _title_below_groove
 	type=1
-	text={title} - {artist} - {version}
+	text={title} - {artist} - {version} - BPM:{bpm}
 	anchor=0
 	fsize=22
 	pos=38,11.1%
@@ -288,12 +295,13 @@ score-combo
 #分数展示
 score-score
 	zindex=11
-	frame=csnumbers/0-9
+	frame=comde/0-9
 	interval=1
-	fsize=17
+	fsize=30
 	anchor=2
-	pos=919,965
-	pos2=1px,0
+	interval=1
+	pos=916,90%
+	pos2=1.24px,0
 
 #血槽展示
 score-hp
@@ -381,11 +389,40 @@ score-acc
 #	opacity=100
 #	tex=song_name_layer.png
 #	size=334,54
-#score-maxcombo
-#	zindex=11
-#	frame=csnumbers/0-9
-#	interval=1
-#	fsize=17
-#	anchor=2
-#	pos=919,160
-#	pos2=0px,0
+
+#追加的最大连击数(更改了字体)
+score-maxcombo
+	zindex=210
+	frame=COMBO/00-09
+	interval=2
+	fsize=30
+	anchor=2
+	pos=916,85.9%
+	pos2=1.3px,0
+
+#追加分段KPS显示
+musicbar
+    anchor=0
+    size=980,100
+    pos=530,81%
+    count=210
+	zindex=220
+
+#追加奇怪劲舞冰精
+_cirno
+	type=3
+	frame=cirno/0-7
+	interval=38
+	size=0,104
+	anchor=4
+	pos=1008,87.1%
+	zindex=211
+
+#追加绿色键盘, 手速一般
+#_keyboard
+#	type=3
+#	frame=keyboard/0-5
+#	interval=42
+#	size=0,104
+#	pos=1008,87.1%
+#	zindex=211
