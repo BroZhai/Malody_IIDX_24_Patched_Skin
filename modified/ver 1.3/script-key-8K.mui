@@ -49,8 +49,8 @@ _song_difficulty
 _song_bpm
 	type=1
 	text=BPM: {bpm}
-	anchor=2
-	pos=1080,100%
+	anchor=4
+	pos=_song_title 0,44
 	zindex=202
 
 _title_below_groove
@@ -96,7 +96,7 @@ _judgeline_redbar
 #背景图
 _stage0
 	type=0
-	zindex=2
+	zindex=5
 	anchor=0
 	pos=0,1080
 	tex=stage_fiixed.png
@@ -404,9 +404,11 @@ score-maxcombo
 musicbar
     anchor=0
     size=980,100
+#	size=995,100
     pos=530,81%
+#	pos=515,81%
     count=210
-	zindex=220
+	zindex=2
 
 #追加奇怪劲舞冰精
 _cirno
@@ -426,7 +428,7 @@ progress
     tex=bar.png
     size=632,10
 #    pos=32.8%-164,661
-	pos=58,95%
+	pos=59,95%
     zindex=80
 
 #追加绿色键盘, 手速一般

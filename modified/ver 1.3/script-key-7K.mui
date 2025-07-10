@@ -49,8 +49,8 @@ _song_difficulty
 _song_bpm
 	type=1
 	text=BPM: {bpm}
-	anchor=2
-	pos=1080,100%
+	anchor=4
+	pos=_song_title 0,44
 	zindex=202
 
 _title_below_groove
@@ -412,7 +412,7 @@ musicbar
     size=980,100
     pos=530,81%
     count=210
-	zindex=220
+	zindex=2
 
 #追加奇怪劲舞冰精
 _cirno
