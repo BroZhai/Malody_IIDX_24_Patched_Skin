@@ -49,6 +49,7 @@ _song_difficulty
 _song_bpm
 	type=1
 	text=BPM: {bpm}
+	fsize=34
 	anchor=4
 	pos=_song_title 0,44
 	zindex=202
