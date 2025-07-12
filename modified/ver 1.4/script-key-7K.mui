@@ -1,0 +1,446 @@
+@version 3.6.5
+@unit 1080
+#good judge has 2 frames
+#just great has 6 frames (blue x2 + pink x2 + green x2)
+#up to down:judge -> note -> hitlight -> judgeline_redbar
+#30 frames for scale and 30 frames for stay
+#hp bar has 50 blocks
+#hp bar length 450 pixel
+
+#　尺寸size的计算是 游戏宽度 / 720, 移动 左减 右加, 上加 下减
+#  type: 0-图片元素 , 1 - 文字控件 text = ({title}, {artist}, {creator}, {version})
+
+    #参考锚点 (注意: 锚点是'物件'自身的, )
+    #0-左上, 1-上, 2-右上, 
+    #3-中左, 4-中, 5-中右,
+    #6-左下, 7-下, 8-右下
+
+    #字体相关设置
+    # color=#xxxxxx 设置字体颜色
+    # fsize=数值 设置字体大小
+    
+	#物体默认会'出生在'屏幕左下角 (左下角为原点, pos 0,0)
+#  
+
+_song_title 
+    type=1
+    text={title}
+    color=#ffffff 
+    fsize=36
+    pos=1015,94%
+    zindex=200
+
+_song_artist
+    type=1
+    text={artist}
+    color=#ffffff 
+    fsize=24
+    pos=1214,88.7%
+    zindex=200
+
+_song_difficulty
+    type=1
+    text={version}
+    color=#ffffff 
+    fsize=26
+    pos=1215,84.6%
+    zindex=200
+
+_song_bpm
+	type=1
+	text=BPM: {bpm}
+	anchor=4
+	pos=_song_title 0,44
+	zindex=202
+
+_title_below_groove
+	type=1
+	text={title} - {artist} - {version} - BPM:{bpm}
+	anchor=0
+	fsize=22
+	pos=38,11.1%
+	zindex=202
+
+:fade_sizex
+	name=fade,from=100,to=0,time=(0,+131.32),repeat=r1000000
+	name=size,from=(4,4),to=(449,4),time=(0,+1000),trans=(0.78,1.09,0.09,1),repeat=1000000
+:turn
+	name=rotate,from=0,to=180,time=(0,+383.41),repeat=1000
+_turn
+	zindex=12
+	type=0
+	anchor=4
+	tex=turn.png
+	size=38,38
+	pos=100.5,295.5
+	motion=turn
+#_glow_dynamic
+_glow_static
+	type=0
+	anchor=0
+	zindex=13
+	tex=glow.png
+	size=431,41
+	pos=76,398
+	opacity=100
+#24 frames for it(150bpm)
+_judgeline_redbar
+	type=0
+	zindex=14
+	tex=redbar.png
+	anchor=0
+	size=432,8
+	pos=75,365
+	opacity=100
+
+#背景图
+_stage0
+	type=0
+	zindex=2
+	anchor=0
+	pos=0,1080
+	tex=stage_fiixed.png
+	size=1920,1080
+	opacity=100
+
+#血槽下方样式(已在PS修整, 用于遮挡落'下'的音符)
+_stage1
+	type=0
+	zindex=11
+	anchor=0
+	pos=0,368
+	tex=stage1.png
+	size=530,368
+
+#血槽样式
+_bar_below_groove_gauge
+	zindex=12
+	anchor=4
+	tex=bar_below_groove_gauge.png
+	pos=276.5,191
+	size=4,4
+	motion=fade_sizex
+	
+#按键/判定/按下相关
+note-[1-7]
+	type=2
+	anchor=6
+#note-[1]
+#	tex=red.png
+#	tex5=tex5_1.png
+#	tex2=tex2_1.png
+#	tex3=tex3_1.png
+#	size=90,12
+#	size2=90,13
+#	pos=75,1080
+#	pos2=75,357
+note-[1,3,5,7]
+	tex=new_white.png
+	size=52,12.2
+	size2=52,12.2
+	tex5=tex5_2468.png
+	tex2=lwhite.png
+	tex3=tex3_2468.png
+note-[2,6]
+	tex=new_blue.png
+	size=39,12.2
+	size2=39,12.2
+	tex5=blue_end.png
+	tex2=lblue.png
+	tex3=blue_start.png
+
+#中键单独设置成黄色
+#note-[4]
+#	tex=yellow.png
+#	size=39,12.2
+#	size2=39,12.2
+#	tex5=tex5_357.png
+#	tex2=tex2_357.png
+#	tex3=tex3_357.png
+
+note-1
+	pos=168,1080
+	pos2=168,357
+note-2
+	pos=222,1080
+	pos2=222,357
+note-3
+	pos=264,1080
+	pos2=264,357
+#黄键跑这儿来了
+note-4
+	tex=new_yellow.png
+	size=39,11
+	size2=39,11
+	tex5=yellow_end.png
+	tex2=lyellow.png
+	tex3=yellow_start.png
+	pos=318,1080
+	pos2=318,357
+note-5
+	pos=360,1080
+	pos2=360,357
+note-6
+	pos=414,1080
+	pos2=414,357
+note-7
+	pos=455,1080
+	pos2=455,357
+	
+
+key-[1-7]
+	anchor=0
+	zindex=15
+key-[2,4,6]
+	tex=keypressed357_1.png
+	tex2=keypressed357.png
+	size=39,73
+key-[1,3,5,7]
+	tex=keypressed2468_1.png
+	tex2=keypressed2468.png
+	size=57,94
+key-2
+	pos=222,352
+key-4
+	pos=318,352
+key-6
+	pos=414,352
+key-1
+	pos=165,352
+key-3
+	pos=261,352
+key-5
+	pos=357,352
+key-7
+	pos=453,352
+
+	
+	
+hit-[1-8]
+	anchor=4
+	interval=16.67
+    frame=hit/0-8#常规note
+	frame2=hit/3-5#hold长压
+	frame3=hit/6-8#hold松开
+	size=250,250
+    zindex=150
+	blend=1
+	opacity=90
+
+hit-1
+	pos=195,356
+hit-2
+	pos=242.5,356
+hit-3
+	pos=291,356
+hit-4
+	pos=338.5,356
+hit-5
+	pos=387,356
+hit-6
+	pos=434.5,356
+hit-7
+	pos=482,356
+	
+	
+	
+	
+press-[1-7]
+	anchor=6
+	zindex=9
+#press-1
+#	frame=light1/0-0
+#	pos=75,357
+#	size=90,555
+press-[2,4,6]
+	zindex=9
+	frame=light357/0-0
+	size=41,569
+press-[1,3,5,7]
+	frame=light2468/0-0
+	size=51,555
+press-2
+	pos=222,357
+press-4
+	pos=318,357
+press-6
+	pos=414,357
+press-1
+	pos=168,357
+press-3
+	pos=264,357
+press-5
+	pos=360,357
+press-7
+	pos=455,357
+
+
+judge-1
+	zindex=11
+	anchor=1 # �ο�������
+	type=3 # ������
+	frame=GREAT/1-6 # just great
+	frame2=COOL/0-5 # cool
+	frame3=GOOD/0-5 # good
+	frame4=BAD/0-5 # bad
+	interval=33
+#	pos=287,553 # С����λ��combo����
+	pos=172,553
+#��λ������
+	size=0,86
+
+#连击数
+score-combo
+	anchor=1
+	zindex=50
+	pos=417.7,553
+	pos2=1px,0px
+	fsize=86
+	frame=COMBO/00-09
+	interval=1
+	
+#分数展示
+score-score
+	zindex=11
+	frame=digit/0-9
+	interval=1
+	fsize=30
+	anchor=2
+	interval=1
+	pos=916,90%
+	pos2=1.24px,0
+
+#血槽展示
+score-hp
+	zindex=12
+	type=1
+	count=50
+	pos2=9px,0
+	frame=hpbar/0-1
+	size=8,32
+	anchor=6
+#	pos=52,187
+	pos=501,187
+#	pos=52,155
+	interval=1
+	rotate=180
+	type2=0
+
+# fast样式
+#hit-fast
+#	zindex=15
+#	anchor=1
+#	pos=282.5,591
+#	size=61.7,30
+#	frame=fast/0-0
+#	interval=200
+
+#slow样式
+#hit-slow
+#	zindex=15
+#	anchor=1
+#	pos=282.5,591
+#	size=70,29
+#	frame=slow/0-0
+#	interval=200
+
+#bga展示区
+bga
+	zindex=1
+	size=0,726
+	pos=1025,13.5%
+
+#重写暂停按钮样式
+pause
+    type=0
+    tex=pause.png
+    size=0,50
+    pos=34,97%
+    zindex=100
+
+#精准度数值 (更改使用自定义贴图, 追加了小数点.和百分号%, 更改显示位置到combo上方)
+score-acc
+	zindex=12
+	frame=char/0-11
+	pos=240,52.8%
+	pos2=1.1px,0
+	fsize=26
+	interval=1
+
+# (备份)
+#score-acc
+#	zindex=12
+#	frame=char/0-
+#	pos=770,83.5%
+#	pos2=1.15px,0
+#	fsize=22
+#	interval=1
+
+
+#精准度背景
+#_score_acc_cover
+#	type=0
+#	anchor=6
+#	zindex=13
+#	tex=score_acc_cover.png
+#	size=10,10
+#	pos=476,196
+#	opacity=100
+
+#原作废弃
+#_song_name_layer
+#	zindex=2
+#	pos=845,76
+#	anchor=6
+#	type=0
+#	opacity=100
+#	tex=song_name_layer.png
+#	size=334,54
+
+#追加的最大连击数(更改了字体)
+score-maxcombo
+	zindex=210
+	frame=COMBO/00-09
+	interval=2
+	fsize=30
+	anchor=2
+	pos=916,85.9%
+	pos2=1.3px,0
+
+#追加分段KPS显示
+musicbar
+    anchor=0
+    size=980,100
+    pos=530,81%
+    count=210
+	zindex=2
+
+#追加奇怪劲舞冰精
+_cirno
+	type=3
+	frame=cirno/0-7
+	interval=38
+	size=0,104
+	anchor=4
+	pos=1008,87.1%
+	zindex=211
+
+#追加左侧时间进度条
+progress
+    type=0
+    rotate=90
+	anchor=0
+    tex=bar.png
+    size=632,10
+#    pos=32.8%-164,661
+	pos=58,95%
+    zindex=80
+
+#追加绿色键盘, 手速一般
+#_keyboard
+#	type=3
+#	frame=keyboard/0-5
+#	interval=42
+#	size=0,104
+#	pos=1008,87.1%
+#	zindex=211
