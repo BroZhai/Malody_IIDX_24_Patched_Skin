@@ -17,8 +17,7 @@ The reason is pretty simple: there haven't been any skins that can read both BGA
 *7.6 21:00 追加更新: <br>
 Malody官网把可能出于商业原因4.3.7旧版下载地址关停了, 网上也没找到啥好的下载入口, 这里贴出个人整理的两个平台安装包(网盘 or 前往最早的Release进行下载)*
 <br>
-(出于安全考虑, 请自行扫QR Code进入地址, 请**使用浏览器PC模式请求**)<br>
-![](statics/download.png)<br>
+网盘链接: https://wwcx.lanzoum.com/b0ko8hlub <br>
 密码: fe3n<br>
 (**注意: PC安装包中可能包含未完成的测试皮肤文件, 建议先删除内部旧的皮肤再装新的ver1.5 & pro皮肤**)
 
